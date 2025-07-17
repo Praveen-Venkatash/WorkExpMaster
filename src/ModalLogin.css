@@ -1,0 +1,101 @@
+/* Modal container */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+/* Avatar image */
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Container styles */
+.container {
+  margin-top: 20px;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Footer container */
+.container.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: right;
+}
+
+/* Buttons */
+button {
+  background-color: #5541ec;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cancelbtn {
+  position: relative;
+  left: -100px;
+  background-color: #e88179;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
