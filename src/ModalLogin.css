@@ -22,6 +22,7 @@
   max-width: 400px;
   border-radius: 10px;
   animation: slideIn 0.3s ease-out;
+  color: black;
 }
 
 /* Animation */
@@ -86,16 +87,13 @@ button {
   color: white;
   border: none;
   padding: 10px 20px;
-  margin-top: 10px;
+  margin: 8px 0;
   cursor: pointer;
   border-radius: 4px;
 }
 
 .cancelbtn {
-  position: relative;
-  left: -100px;
   background-color: #e88179;
   color: white;
-  padding: 10px 20px;
   border-radius: 4px;
 }
